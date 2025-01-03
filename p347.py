@@ -11,6 +11,9 @@ def topKFrequent(nums, k):
         else:
             dict[num] = 0
 
+
+    # dict.items() puts dict into a list of tuples
+    # lambda function makes sure the target key is the second element in the tuple
     sorted_dict = sorted(dict.items(), key=lambda x:x[1])
     sorted_dict.reverse()
 
