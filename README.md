@@ -1,6 +1,6 @@
 # leetcode
 
-i will try to commit to daily leetcode 
+i try to commit to daily leetcode 
 
 
 hopefully this works
