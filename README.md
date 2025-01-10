@@ -10,3 +10,5 @@ going to follow neetcode roadmap
 
 
 https://neetcode.io/roadmap
+
+![LeetCode Stats](https://leetcard.jacoblin.cool/p0nyo?theme=nord&font=Poppins&ext=contest)
