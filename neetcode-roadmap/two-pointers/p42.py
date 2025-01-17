@@ -25,5 +25,7 @@ def trap(height):
     
     return res
 
-height = [1,0,2,0,1]
+# def trap2(height):
+
+height = [3,0,4,0,3]
 print(trap(height))
