@@ -29,10 +29,19 @@ def removeNthFromEnd2(head, n):
     """
     l = head
     r = head
+    length = 0
+    current = head
+
+    while current:
+        length += 1
+        current = current.next
+
+    if n == length:
+        return head.next
+
     for _ in range(n+1):
-        r = r.next
-        if r.next == None:
-            return head.next
+        if r:
+            r = r.next
 
     while r:
         l = l.next
