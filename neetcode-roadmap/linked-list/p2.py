@@ -9,12 +9,7 @@ def addTwoNumbers(l1, l2):
     :type l2: Optional[ListNode]
     :rtype: Optional[ListNode]
     """
-    carry = 0
-    current1 = l1
-    current2 = l2
-    res = ListNode(0)
-
-    def backtrack(head, current1, current2, carry):
+    def backtrack(current1, current2, carry):
         if not current1 and not current2:
             if carry > 0:
                 return ListNode(carry, None)
@@ -43,10 +38,7 @@ def addTwoNumbers(l1, l2):
         new_node.next = backtrack(new_node, current1, current2, carry)
         
         return new_node
-    
-    res.next = backtrack(res, current1, current2, carry)
 
-    return res.next
-        
+    return backtrack(l1, l2, 0)
 
 
