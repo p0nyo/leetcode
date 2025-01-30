@@ -33,12 +33,14 @@ def mergeKLists(lists):
     :type lists: List[Optional[ListNode]]
     :rtype: Optional[ListNode]
     """
-    if len(lists) < 2:
+    if len(lists) == 0:
         return None
+    elif len(lists) == 1:
+        return lists[0]
 
     res = mergeTwoLists(lists[0], lists[1])
 
-    for i in range(2, len(lists)-1):
-        res = mergeTwoLists(res, list[i+1])
+    for i in range(2, len(lists)):
+        res = mergeTwoLists(res, lists[i])
 
     return res
